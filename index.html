@@ -37,7 +37,12 @@
 
 <div class="navigation">
 
-<? include 'site/includes/navigation.html' ?>
+<script>
+    $(function(){
+      $("#includedNavigation").load("site/includes/navigation.html");
+      });
+    </script>
+
 
 </div>
 </div>
@@ -188,7 +193,11 @@
 
 <!----  footer ---->
 
-<? include 'site/includes/footer.html' ?>
+<script>
+$(function(){
+$("#includedFooter").load("site/includes/footer.html");
+});
+</script>
 
 <!----  footer end ---->
 
@@ -198,6 +207,7 @@
 
 
 <!----  scripts ---->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 <script src="site/js/jquery-1.9.1.min.js"></script>
 <script src="site/js/waypoints.min.js"></script>
 <script src="site/js/site.js"></script>
